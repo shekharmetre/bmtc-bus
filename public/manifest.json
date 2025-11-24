@@ -1,0 +1,22 @@
+{
+  "name": "Tummoc",
+  "short_name": "Tummoc",
+  "description": "BMTC-BUS",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/tummoc.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/tummoc.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
