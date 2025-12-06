@@ -19,7 +19,7 @@ interface PassengerForm {
 
 const HomePage = () => {
   const router = useRouter()
-  const possible = ["Shekhar metre", "Shoaib"]
+  const possible = ["shekar", "Shoaib"]
   const [passengerForm, savePassengerForm] =
     useLocalStorageOnce<PassengerForm | null>("passengerForm", null);
   // ---------------- Popup State ----------------
@@ -31,6 +31,7 @@ const HomePage = () => {
     image: ""
   })
   const [greenAdd, setgreenAdd] = useState(true)
+  console.log(formData.name,"formsdfassdf")
 
   // Open popup only if localStorage does NOT have passengerForm
   useEffect(() => {
