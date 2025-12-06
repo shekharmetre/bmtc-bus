@@ -49,7 +49,7 @@ export default function CopyrightWarning() {
                         </svg>
                     </div>
 
-                    <h1 className="mt-6 text-3xl font-extrabold bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-lg">
+                    <h1 className="mt-6 text-3xl font-extrabold bg-linear-to-r from-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-lg">
                         COPYRIGHT VIOLATION DETECTED
                     </h1>
 
@@ -80,7 +80,7 @@ export default function CopyrightWarning() {
                 </div>
 
                 {/* DIVIDER */}
-                <div className="mt-10 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-50"></div>
+                <div className="mt-10 h-px bg-linear-to-r from-transparent via-red-600 to-transparent opacity-50"></div>
 
                 {/* ACTION BUTTONS */}
                 <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 px-4">
@@ -93,7 +93,7 @@ export default function CopyrightWarning() {
               rounded-xl 
               font-semibold 
               text-white 
-              bg-gradient-to-r from-red-600 to-red-800 
+              bg-linear-to-r from-red-600 to-red-800 
               shadow-[0_5px_25px_rgba(255,0,0,0.4)] 
               hover:shadow-[0_5px_35px_rgba(255,0,0,0.6)] 
               transition-all 
