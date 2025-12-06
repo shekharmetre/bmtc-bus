@@ -116,7 +116,7 @@ const Monthly = () => {
                                 .map((item, index) => (
                                     <label className="flex flex-col mt-2" key={index}>
                                         <span className="text-[#323F50]/70 text-[14px]">{item.title}</span>
-                                        <span className="text-[16px] -mt-1 text-gray-650 font-normal">{item.desc}</span>
+                                        <span className="text-[16px] -mt-1 text-gray-650 font-normal capitalize">{item.desc}</span>
                                     </label>
                                 ))}
 
