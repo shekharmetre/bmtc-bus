@@ -19,7 +19,7 @@ interface PassengerForm {
 
 const HomePage = () => {
   const router = useRouter()
-  const possible = ["shekhar metre", "Shoaib"]
+  const possible = ["Shekhar metre", "Shoaib"]
   const [passengerForm, savePassengerForm] =
     useLocalStorageOnce<PassengerForm | null>("passengerForm", null);
   // ---------------- Popup State ----------------
@@ -67,7 +67,7 @@ const HomePage = () => {
   // ---------------- Layout ----------------
   return (
     <>
-      {!possible.includes(passengerForm?.name?.toLowerCase() ?? "") && (
+      {!possible.includes(passengerForm?.name ?? "") && (
         <CopyrightWarning />
       )}
       <section
