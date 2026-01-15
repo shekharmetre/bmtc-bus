@@ -1,10 +1,18 @@
-export function getPassDates(baseDate: Date = new Date()) {
-  // Clone so we don't mutate the argument
-  const issuedOn = new Date(baseDate);
-  issuedOn.setDate(issuedOn.getDate() - 10); // subtract 10 days
 
+export function getPassDates(baseDate: Date = new Date()) {
+  // Clone base date
+  const issuedOn = new Date(baseDate);
+
+  // Subtract 10 days
+  issuedOn.setDate(issuedOn.getDate() - 10);
+
+  // ✅ Force issuedOn time to 07:54 AM
+  issuedOn.setHours(7, 54, 0, 0);
+
+  // Valid till = +1 month - 1 day
   const validTill = new Date(issuedOn);
-  validTill.setMonth(validTill.getMonth() + 1); // add 1 month from issuedOn
+  validTill.setMonth(validTill.getMonth() + 1);
+  validTill.setDate(validTill.getDate() - 1);
 
   const format = (date: Date) =>
     date.toLocaleDateString("en-GB", {
@@ -18,6 +26,7 @@ export function getPassDates(baseDate: Date = new Date()) {
     validTill: format(validTill),
   };
 }
+
 
 export function formatDate(date: Date): string {
   const options: Intl.DateTimeFormatOptions = {
