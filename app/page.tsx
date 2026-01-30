@@ -19,7 +19,7 @@ interface PassengerForm {
 
 const HomePage = () => {
   const router = useRouter()
-  const possible = ["shekar", "Shoaib","Mohammad Suhaib Amir","omkar","nitin"]
+  const possible = ["shekar", "Shoaib","Mohammad Suhaib Amir","omkar","nitin","Nitin"]
   const [passengerForm, savePassengerForm] =
     useLocalStorageOnce<PassengerForm | null>("passengerForm", null);
   // ---------------- Popup State ----------------
